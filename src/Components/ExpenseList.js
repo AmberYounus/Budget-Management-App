@@ -22,3 +22,4 @@ const ExpenseList = () => {
             </ul>
         )
 }
+export default ExpenseList;
