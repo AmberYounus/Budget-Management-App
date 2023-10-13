@@ -5,6 +5,7 @@ import Budget from './Components/Budget';
 import Remaining from './Components/Remaining';
 import ExpenseTotal from './Components/ExpenseTotal';
 import ExpenseList from './Components/ExpenseList';
+import AddExpenseForm from './Components/AddExpenseForm';
 
 
 const  App = () => {
@@ -27,6 +28,12 @@ const  App = () => {
     <div className="row mt-3">
       <div className="col-sm">
         <ExpenseList/>
+      </div>
+    </div>
+    <h3 className="mt-3">Add Expenses</h3>
+    <div className=" mt-3">
+      <div className="col-sm">
+        <AddExpenseForm/>
       </div>
     </div>
     </div>
