@@ -1,5 +1,11 @@
-import { createContext } from "react";
+import { createContext ,useReducer } from "react";
 
+const AppReducer =(state,action)=>{
+    switch(action,type){
+        default:
+            return state
+    }
+}
 const initialState ={
     budget:2000,
     expenses:[
@@ -11,3 +17,6 @@ const initialState ={
     ],
 }
 export const AppContext =createContext();
+const AppProvider =(props)=>{
+    const[state,dispatch]=useReducer(AppReducer,initialState)
+}
