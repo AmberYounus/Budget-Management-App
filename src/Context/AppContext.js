@@ -1,7 +1,7 @@
 import { createContext ,useReducer } from "react";
 
 const AppReducer =(state,action)=>{
-    switch(action,type){
+    switch(action.type){
         default:
             return state
     }
