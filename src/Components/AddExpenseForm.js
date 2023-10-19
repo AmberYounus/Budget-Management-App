@@ -9,7 +9,7 @@ const AddExpenseForm =()=>{
                     <input type="text" required='required' className="form-control" id="name" />
                 </div>
                 <div className="col-sm">
-                    <label htmlFor="name">Cost</label>
+                    <label htmlFor="cost">Cost</label>
                     <input type="text" required='required' className="form-control" id="cost" />
                 </div>
                 <div className="col-sm">
