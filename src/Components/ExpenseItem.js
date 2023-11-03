@@ -1,5 +1,5 @@
 import React from "react";
-import { TiDelete } from "react-icons/ti";
+// import { TiDelete } from "react-icons/ti";
 
 const ExpenseItem = (props) => {
   return (
@@ -8,7 +8,7 @@ const ExpenseItem = (props) => {
       <div>
         <span className="badge badge-primary badge-fill mr-3">
         €{props.cost}
-          <TiDelete size="1.5em"></TiDelete>
+          {/* <TiDelete size="1.5em"></TiDelete> */}
         </span>
       </div>
     </li>
