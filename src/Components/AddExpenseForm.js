@@ -14,6 +14,10 @@ const AddExpenseForm = () => {
         name:name,
         cost:parseInt(cost),
     }
+    dispatch({
+        type:"ADD_EXPENSE",
+        payload:expense,
+    })
 
     const onSubmit = (event) => {
         event.preventDefault();
