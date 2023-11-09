@@ -9,21 +9,22 @@ const AddExpenseForm = () => {
     const [name,setName] = useState('');
     const [cost,setCost] = useState('');
 
-    const expense ={
-        id:uuidv4(),
-        name:name,
-        cost:parseInt(cost),
-    }
-    dispatch({
-        type:"ADD_EXPENSE",
-        payload:expense,
-    })
 
     const onSubmit = (event) => {
         event.preventDefault();
         alert("name " + name + " cost " + cost)
+        const expense ={
+            id:uuidv4(),
+            name:name,
+            cost:parseInt(cost),
+        }
+        dispatch({
+            type:"ADD_EXPENSE",
+            payload:expense,
+        })
     }
 
+    
     return(
         <form onSubmit={onSubmit}>
             <div className="row">
