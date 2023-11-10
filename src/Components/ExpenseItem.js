@@ -1,5 +1,5 @@
 import React , {useContext} from "react";
-// import { TiDelete } from "react-icons/ti";
+import { TiDelete } from "react-icons/ti";
 import { AppContext } from "../Context/AppContext";
 
 const ExpenseItem = (props) => {
@@ -18,7 +18,7 @@ const ExpenseItem = (props) => {
       <div>
         <span  className="badge badge-primary badge-fill mr-3">
         €{props.cost} 
-          {/* <TiDelete size="1.5em" onClick={handleDeleteExpense}></TiDelete> */}
+          <TiDelete size="1.5em" onClick={handleDeleteExpense}></TiDelete>
         </span>
       </div>
     </li>

@@ -1,6 +1,6 @@
 
 import './App.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Budget from './Components/Budget';
 import Remaining from './Components/Remaining';
 import ExpenseTotal from './Components/ExpenseTotal';
@@ -14,7 +14,7 @@ const  App = () => {
 
    <>
    <div className="container">
-    <div className="mt-3">My Budget PLanner</div>
+    <h1 className="mt-3">My Budget Planner</h1>
     <div className="row mt-3">
       <div className="col-sm">
         <Budget/>

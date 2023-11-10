@@ -12,7 +12,9 @@ const AddExpenseForm = () => {
 
     const onSubmit = (event) => {
         event.preventDefault();
+
         alert("name " + name + " cost " + cost)
+
         const expense ={
             id:uuidv4(),
             name:name,
@@ -22,13 +24,15 @@ const AddExpenseForm = () => {
             type:"ADD_EXPENSE",
             payload:expense,
         })
+        setName('')
+        setCost('')
     }
 
     
     return(
         <form onSubmit={onSubmit}>
             <div className="row">
-                <div className="col-sm">
+                <div className="col-sm col-lg-4">
                     <label htmlFor="name">Name</label>
                     <input type="text" required='required' className="form-control" id="name" 
                        value={name} onChange={(event)=>{setName(event.target.value)}} />
@@ -38,10 +42,13 @@ const AddExpenseForm = () => {
                     <input type="text" required='required' className="form-control" id="cost" 
                         value={cost} onChange={(event)=>{setCost(event.target.value)}} />
                 </div>
-                <div className="col-sm">
-                   <button type="submit" className="btn btn-primary">Save</button>
-                </div>
             </div>
+                {/* <div className="row">         */}
+                    <div className="col-sm">
+                        <button type="submit" className="btn btn-primary text-center mt-3">Save</button>
+                    </div>
+            {/* </div> */}
+        
         </form>
     )
 }
