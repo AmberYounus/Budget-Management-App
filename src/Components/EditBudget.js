@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
-
 const EditBudget = (props) => {
     const [value, setValue] = useState(props.budget);
 
     return (
         <>
             <input required='required'
-                type="number"      className="form-control mr-3"
-                 id="name"       value={value}
+                type="number" className="form-control mr-3"
+                id="name" value={value}
                 onChange={(event) => setValue(event.target.value)} />
-            <button type="button"  onClick={() => props.handleSaveClick(value)} 
-            className="btn btn-primary">Save</button>
+
+            <button type="button" onClick={() => props.handleSaveClick(value)}
+                className="btn btn-primary">Save</button>
         </>
     )
 }
