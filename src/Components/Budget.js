@@ -10,19 +10,23 @@ const Budget = () => {
 
   //Edit function
   const handleEditClick = () => {
-
+    setIsEditing(true);
   }
 
   //Save Function
-  const handleSaveClick = () => {
-
+  const handleSaveClick = (value) => {
+    dispatch({
+      type:'SET_BUDGET',
+      payload:value,
+    })
+    setIsEditing(false)
   }
 
   return (
-    <div className="alert alert-secondary">
+    <div className="alert alert-secondary p-3 d-flex align-items-center justify-content-between">
       {isEditing ? (<EditBudget handleSaveClick={handleSaveClick} budget={budget} />
       ) : (<ViewBudget handleEditClick={handleEditClick} budget={budget} />)}
-      <span>Budget:  €{budget}</span>
+      {/* <span>Budget:  €{budget}</span> */}
     </div>
   )
 }
