@@ -18,7 +18,7 @@ const ExpenseItem = (props) => {
       <div>
         <span  className="badge badge-primary badge-fill mr-3">
         €{props.cost} 
-          <TiDelete size="1.5em" onClick={handleDeleteExpense}></TiDelete>
+          <TiDelete size="1.5em" onClick={handleDeleteExpense}>Delete</TiDelete>
         </span>
       </div>
     </li>
