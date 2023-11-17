@@ -24,10 +24,14 @@ const Budget = () => {
 
   return (
     <div className="alert alert-secondary p-3 d-flex align-items-center justify-content-between">
-      {isEditing ? (<EditBudget handleSaveClick={handleSaveClick} budget={budget} />
-      ) : (<ViewBudget handleEditClick={handleEditClick} budget={budget} />)}
+      {isEditing ? 
+      (<EditBudget handleSaveClick={handleSaveClick} budget={budget} />) 
+      : 
+      (<ViewBudget handleEditClick={handleEditClick} budget={budget} />)}
       {/* <span>Budget:  €{budget}</span> */}
     </div>
+    
   )
+
 }
 export default Budget;
