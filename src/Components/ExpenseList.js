@@ -11,9 +11,9 @@ const ExpenseList = () => {
     }, [expenses])
 
     const handleChange = (event) => {
-        const searchResults = expenses.filter((filteredExpense) => {
+        const searchResults = expenses.filter((filteredExpense) => 
             filteredExpense.name.toLowerCase().includes(event.target.value)
-        })
+        )
         setFilteredExpenses(searchResults)
     }
     return (
