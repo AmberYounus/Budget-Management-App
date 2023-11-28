@@ -44,7 +44,7 @@ const AddExpenseForm = () => {
             </div>
                 {/* <div className="row">         */}
                     <div className="col-sm">
-                        <button type="submit" className="btn btn-primary text-center mt-3">Save</button>
+                        <button type="submit" className="btn btn-outline-primary btn-lg btn-block text-center mt-3">Save</button>
                     </div>
             {/* </div> */}
         

@@ -28,7 +28,7 @@ const Budget = () => {
       (<EditBudget handleSaveClick={handleSaveClick} budget={budget} />) 
       : 
       (<ViewBudget handleEditClick={handleEditClick} budget={budget} />)}
-      {/* <span>Budget:  €{budget}</span> */}
+      {/* <span>Budget:  £{budget}</span> */}
     </div>
     
   )

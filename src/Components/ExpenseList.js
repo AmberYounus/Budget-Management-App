@@ -19,7 +19,7 @@ const ExpenseList = () => {
     return (
         <>
             <input type="text" onChange={handleChange} className="form-control mb-2 mr-sm-2"
-                placeholder="Type to search" />
+                placeholder="Type to search expense items" />
             <ul className="list-group mt-3 mb-3">
        
                 {filteredExpenses.map((expense) => (
