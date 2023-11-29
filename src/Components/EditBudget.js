@@ -11,7 +11,7 @@ const EditBudget = (props) => {
                 onChange={(event) => setValue(event.target.value)} />
 
             <button type="button" onClick={() => props.handleSaveClick(value)}
-                className="btn btn-primary">Save</button>
+                className="btn btn-primary ">Save</button>
         </>
     )
 }

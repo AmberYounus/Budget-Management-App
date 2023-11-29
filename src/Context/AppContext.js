@@ -29,7 +29,6 @@ const initialState = {
   expenses: [
     { id: uuidv4(), name: "shopping", cost: 10 },
     { id: uuidv4(), name: "holiday", cost: 500 },
-    { id: uuidv4(), name: "car", cost: 50 },
   ],
 };
 
