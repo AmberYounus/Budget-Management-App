@@ -26,17 +26,32 @@ const App = () => {
               <ExpenseTotal />
             </div>
           </div>
-          <h3 className="mt-3">Expenses</h3>
-          <div className="row mt-3">
+          <div className="row">
+            <div class="col-sm-6">
+          <h3 className="mt-3">Expenses List</h3>
+          <div class="card">
+              <div class="card-body">
+            <div className="row mt-3">
             <div className="col-sm">
               <ExpenseList />
             </div>
-          </div>
-          <h3 className="mt-3">Add Expenses</h3>
-          <div className=" mt-3">
-            <div className="col-sm">
-              <AddExpenseForm />
             </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-sm-6">
+          <h3 className="mt-3 ">Add Expenses</h3>
+          <div class="card">
+          <div class="card-body">
+          <div className=" mt-3">
+            {/* <div className="col-sm"> */}
+              <AddExpenseForm />
+            {/* </div> */}
+          </div>
+          </div>
+          </div>
+          </div>
           </div>
         </div>
       </>

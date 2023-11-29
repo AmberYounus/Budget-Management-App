@@ -31,14 +31,14 @@ const AddExpenseForm = () => {
     return(
         <form onSubmit={onSubmit}>
             <div className="row">
-                <div className="col-sm col-lg-4">
+                <div className="col-sm ">
                     <label htmlFor="name">Name</label>
-                    <input type="text" required='required' className="form-control" id="name" 
+                    <input type="text" required='required' className="form-control w-100" id="name" 
                        value={name} onChange={(event)=>setName(event.target.value)} />
                 </div>
                 <div className="col-sm">
                     <label htmlFor="cost">Cost</label>
-                    <input type="number" required='required' className="form-control" id="cost" 
+                    <input type="number" required='required' className="form-control w-100" id="cost" 
                         value={cost} onChange={(event)=>setCost(event.target.value)} />
                 </div>
             </div>
