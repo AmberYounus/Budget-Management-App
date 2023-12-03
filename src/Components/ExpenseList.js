@@ -19,10 +19,11 @@ const ExpenseList = () => {
     }
     return (
         <>
-            <input type="text" onChange={handleChange} className="form-control mb-2 mr-sm-2"
+     
+            <input type="text" onChange={handleChange} className="form-control mb-2 mr-sm-2 bg-light"
                 placeholder="Type to search items" />
-            <ul className="list-group mt-3 mb-3">
-                
+            <ul className="list-group mt-3 mb-3 ">
+
                 {filteredExpenses.map((expense) => (
                     <ExpenseItem
                         id={expense.id}
@@ -30,6 +31,7 @@ const ExpenseList = () => {
                         cost={expense.cost} />
                 ))}
             </ul>
+           
         </>
     )
 }

@@ -45,9 +45,9 @@ const App = () => {
               <div class="card h-75 ">
                 <div class="card-body">
                   <div className=" mt-3">
-                    {/* <div className="col-sm"> */}
+    
                     <AddExpenseForm />
-                    {/* </div> */}
+                
                   </div>
                 </div>
               </div>

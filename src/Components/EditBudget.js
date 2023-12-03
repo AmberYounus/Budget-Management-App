@@ -5,7 +5,7 @@ const EditBudget = (props) => {
 
     return (
         //Edit the budget Value
-        <>       
+        <>
             <input required='required'
                 type="number" className="form-control mr-3"
                 id="name" value={value}

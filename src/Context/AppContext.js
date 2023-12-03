@@ -25,7 +25,7 @@ export const AppReducer = (state, action) => {
 };
 
 const initialState = {
-  budget: 2000,
+  budget: 4000,
   expenses: [
     { id: uuidv4(), name: "Grocery Items", cost: 700 },
     { id: uuidv4(), name: "Shopping Items", cost: 1500 },
