@@ -5,13 +5,14 @@ import { AppContext } from "../Context/AppContext";
 const ExpenseList = () => {
     const { expenses } = useContext(AppContext);
     const [filteredExpenses, setFilteredExpenses] = useState(expenses || []);
-    
+
     useEffect(() => {
         setFilteredExpenses(expenses)
     }, [expenses])
 
+    //To Search the expense Items
     const handleChange = (event) => {
-        const searchResults = expenses.filter((filteredExpense) => 
+        const searchResults = expenses.filter((filteredExpense) =>
             filteredExpense.name.toLowerCase().includes(event.target.value)
         )
         setFilteredExpenses(searchResults)
@@ -21,7 +22,7 @@ const ExpenseList = () => {
             <input type="text" onChange={handleChange} className="form-control mb-2 mr-sm-2"
                 placeholder="Type to search items" />
             <ul className="list-group mt-3 mb-3">
-       
+                
                 {filteredExpenses.map((expense) => (
                     <ExpenseItem
                         id={expense.id}

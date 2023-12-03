@@ -12,7 +12,7 @@ const AddExpenseForm = () => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-    alert("name " + name + " cost " + cost)
+    // alert("name " + name + " cost " + cost)
 
         const expense ={
             id:uuidv4(),
@@ -29,6 +29,7 @@ const AddExpenseForm = () => {
 
     
     return(
+        //Add Expense Items
         <form onSubmit={onSubmit}>
             <div className="row">
                 <div className="col-sm ">
@@ -42,12 +43,11 @@ const AddExpenseForm = () => {
                         value={cost} onChange={(event)=>setCost(event.target.value)} />
                 </div>
             </div>
-                {/* <div className="row">         */}
+              
                     <div className="col-sm">
                         <button type="submit" className="btn btn-outline-primary btn-lg btn-block text-center mt-3">Save</button>
                     </div>
-            {/* </div> */}
-        
+            
         </form>
     )
 }
