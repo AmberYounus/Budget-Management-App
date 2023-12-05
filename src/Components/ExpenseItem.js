@@ -5,6 +5,7 @@ import { AppContext } from "../Context/AppContext";
 const ExpenseItem = (props) => {
   const { dispatch } = useContext(AppContext)
 
+  //Delete Expense Items
   const handleDeleteExpense = () => {
     dispatch({
       type: 'DELETE_EXPENSE',

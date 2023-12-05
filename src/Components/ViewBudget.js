@@ -1,6 +1,7 @@
 import React from "react";
 
 const ViewBudget = (props) => {
+    //total Budget of Expenses 
     return (
         <>
             <span> Total Budget : £{props.budget}</span>
